@@ -18,8 +18,7 @@ export function CollapsibleExample() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#research">Research</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-            <NavDropdown title="Publications" id="collasible-nav-dropdown">
+            <NavDropdown className="custom-dropdown" title="Publications" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Publication 1</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
               Publication 2

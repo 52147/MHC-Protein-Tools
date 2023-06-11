@@ -15,7 +15,7 @@ export const Footer = () => {
   useEffect(() => {
     const handleScroll = () => {
       const isAtBottom =
-        window.innerHeight + window.pageYOffset >= document.body.offsetHeight;
+        window.innerHeight + window.pageYOffset>= document.body.offsetHeight;
       setShowFooter(isAtBottom);
     };
 

@@ -1,0 +1,12 @@
+.contact-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+  }
+  
+  .contact-form {
+	width: 500px; /* Adjust the width as needed */
+	margin: 0 auto;
+  }
+  

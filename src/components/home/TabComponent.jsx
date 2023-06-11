@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
+import "./Tab.css";
+import { Submission } from "./Submission";
 
 export const TabComponent = () => {
   const [activeTab, setActiveTab] = useState("profile");
@@ -11,7 +13,7 @@ export const TabComponent = () => {
 
   return (
     <div className="d-flex justify-content-center">
-      <div className="w-75">
+      <div className="w-75 margin-b">
         <Tabs
           id="justify-tab-example"
           className="mb-3"
@@ -20,7 +22,7 @@ export const TabComponent = () => {
           onSelect={handleTabChange}
         >
           <Tab eventKey="submission" title="Submission">
-            Tab content for Submission
+            <Submission/>
           </Tab>
           <Tab eventKey="instructions" title="Instructions">
             Tab content for Instructions

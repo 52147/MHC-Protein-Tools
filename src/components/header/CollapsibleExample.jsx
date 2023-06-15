@@ -14,7 +14,7 @@ export function CollapsibleExample() {
       variant="dark"
     >
       <Container>
-        <Navbar.Brand as={Link} to="/home">
+        <Navbar.Brand as={Link} to="/">
           MHC Tool
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

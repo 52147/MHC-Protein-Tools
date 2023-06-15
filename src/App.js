@@ -13,7 +13,7 @@ function App() {
       <Router>
         <CollapsibleExample />
         <Routes>
-          <Route path="/home" exact element={<HomePage />} />
+          <Route path="/" exact element={<HomePage />} />
           <Route path="/research" exact element={<ResearchPage />} />
           <Route path="/publication" exact element={<PublicationPage />} />
           <Route path="/contact" exact element={<ContactPage/>} />

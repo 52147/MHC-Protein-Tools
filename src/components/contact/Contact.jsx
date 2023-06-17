@@ -7,41 +7,48 @@ import Row from "react-bootstrap/Row";
 
 export const Contact = () => {
   return (
-    <div className="contact-container">
-      <Form className="contact-form">
-        <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
-          <Form.Label column sm={2}>
-            Name
-          </Form.Label>
-          <Col sm={10}>
-            <Form.Control type="name" placeholder="Name" />
-          </Col>
-        </Form.Group>
-        <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
-          <Form.Label column sm={2}>
-            Email
-          </Form.Label>
-          <Col sm={10}>
-            <Form.Control type="email" placeholder="Email" />
-          </Col>
-        </Form.Group>
-        <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
-          <Form.Label column sm={2}>
-            Topic
-          </Form.Label>
-          <Col sm={10}>
-            <Form.Control type="topic" placeholder="Topic" />
-          </Col>
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-          <Form.Label>Example textarea</Form.Label>
-          <Form.Control as="textarea" rows={3} />
-        </Form.Group>
-     
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
-      </Form>
-    </div>
+    <>
+      <div className="contact-container">
+        <div className="contact-body">
+          <div className="login-box">
+            <h2>Contact</h2>
+            <form>
+              <div className="user-box">
+                <input type="name" name="" required="" />
+                <label>Name</label>
+              </div>
+              <div className="user-box">
+                <input type="topic" name="" required="" />
+                <label>Topic</label>
+              </div>
+              <div className="user-box">
+                <input type="email" name="" required="" />
+                <label>Email</label>
+              </div>
+              <div className="user-box">
+                <p className="message-box">Message</p>
+                <Form.Control
+                  as="textarea"
+                  name=""
+                  rows={3}
+                  required=""
+                  style={{
+                    backgroundColor: "rgba(0, 0, 0, 0.769)",
+                    color: "#FFF",
+                  }}
+                />
+              </div>
+              <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit
+              </a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };

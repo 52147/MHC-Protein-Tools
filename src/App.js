@@ -5,7 +5,7 @@ import { CollapsibleExample } from "./components/header/CollapsibleExample";
 import { Footer } from "./components/footer/Footer";
 import { HomePage } from "./components/pages/HomePage";
 import { ResearchPage } from "./components/pages/ResearchPage";
-import { PublicationPage } from "./components/pages/PublicationPage";
+import { NewsPage } from "./components/pages/NewsPage";
 import { ContactPage } from "./components/pages/ContactPage";
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<HomePage />} />
           <Route path="/research" exact element={<ResearchPage />} />
-          <Route path="/publication" exact element={<PublicationPage />} />
+          <Route path="/news" exact element={<NewsPage />} />
           <Route path="/contact" exact element={<ContactPage/>} />
         </Routes>
         <Footer />

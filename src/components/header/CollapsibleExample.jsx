@@ -26,25 +26,9 @@ export function CollapsibleExample() {
             <Nav.Link as={Link} to="/research">
               Research
             </Nav.Link>
-            <NavDropdown
-              className="custom-dropdown"
-              title="Publications"
-              id="collasible-nav-dropdown"
-            >
-              <NavDropdown.Item href="#action/3.1">
-                Publication 1
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Publication 2
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">
-                Publication 3
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link as={Link} to="/news">
+              News
+            </Nav.Link>
           </Nav>
           <Nav>
             <Nav.Link href="#collaboration">Collaboration</Nav.Link>
